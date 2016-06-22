@@ -1,0 +1,19 @@
+{
+  "name": "auctionapp",
+  "version": "1.0.0",
+  "description": "an auction app with angular2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular2",
+    "socket.io"
+  ],
+  "author": "eric mabo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.6"
+  }
+}

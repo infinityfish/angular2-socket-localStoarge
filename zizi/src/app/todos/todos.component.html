@@ -1,0 +1,47 @@
+
+<div class="row">
+  <div class="col-md-5">
+    <form  *ngIf="!editing">
+      <input  type="text" [(ngModel)]="text" class="form-control">
+      <button (click)="addTodo()" class="btn btn-success">Add Todo</button>
+    </form>
+
+
+    <form  *ngIf="editing">
+      <input type="text" [(ngModel)]="text"  class="form-control">
+      <button (click)="updateTodo()" class="btn btn-primary">Update Todo</button>
+    </form>
+
+
+ 
+    <ul class="list-group">
+      <li *ngFor="let todo of todos" class="list-group-item">
+        <span (click)="editTodo(todo)"> {{todo.text}} </span> <button (click)="deleteTodo(todo.text)" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></button>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="col-md-7">
+    <img class="img-responsive center-block"  src="http://resources.phrasemix.com/img/full/wondering-aaron.jpg" alt="Todo Image Here">
+  </div> 
+  
+  <div class="col-md-12">
+    <img class="img-responsive center-block"  src="http://jimbicentral.typepad.com/.a/6a00d8341c824e53ef01a3fd1a52d8970b-pi" alt="Todo Image Here">
+  </div> 
+    
+  <div class="col-md-12">
+    <img class="img-responsive center-block"  src="http://images.huffingtonpost.com/2014-07-12-usmensvsghana.jpg" alt="Todo Image Here">
+  </div> 
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <img class="img-responsive"  src="http://www.quotesvalley.com/images/53/wisdom-is-knowing-what-to-do-next-skill-is-knowing-how-to-do-it-and-virtue-is-doing-it-3.jpg" alt="Todo Image Here">
+  </div> 
+  
+  <div class="col-md-6">
+    <img class="img-responsive"  src="http://resources.phrasemix.com/img/full/wondering-aaron.jpg" alt="Todo Image Here">
+  </div>       
+</div>
+
+
